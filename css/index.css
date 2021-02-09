@@ -1,0 +1,653 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+/*Menu*/
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-area: header; }
+  header .logo {
+    max-width: 90px; }
+  header ul {
+    display: flex; }
+    header ul li {
+      list-style: none; }
+      header ul li a {
+        display: inline-block;
+        color: #354a67;
+        font-weight: 500;
+        margin-left: 40px;
+        text-decoration: none;
+        padding: 5px;
+        transition: 0.7s; }
+
+@media only screen and (min-width: 992px) {
+  header ul li a:hover {
+    display: inline-block;
+    background: #354a67;
+    color: #ddad49 !important;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px;
+    transform: translateY(-10px); } }
+
+.spacebt{
+  width: 100%;
+}
+
+
+.hamburguesa{
+  height: 25px;
+}
+
+.colapsar{
+  margin-right: -50px;
+}
+
+.colapsar:hover{
+  background-color: #ddad49;
+  border: solid 2px #354a67;
+}
+
+.text__hamburguer{
+  display: inline;
+  margin-left: 3px;
+  color: #354a67;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+  .colapsar__logo{
+    margin-left: -40px;
+  }
+}
+/*Menu*/
+
+@media only screen and (min-width: 992px){
+  .redes {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .redes li {
+      list-style: none;
+      padding: 7px; }
+      .redes li img {
+        height: 30px;
+        filter: invert(100%); }
+}
+
+@media only screen and (max-width: 992px){
+  .redes {display: none;}}
+
+@media only screen and (min-width: 992px){
+  .redes-chico {display: none}}
+
+@media only screen and (max-width: 991px){
+  .redes-chico { 
+    position: absolute;
+    top: 60%;
+    left: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #354a67;
+    padding: 10px 5px 10px 40px;
+    border-radius: 10px; }
+    .redes-chico li {
+      list-style: none;
+      padding: 7px; }
+      .redes-chico li a img {
+        height: 30px; 
+        filter: invert(100%);}
+}
+
+.redes__img{
+  filter: invert(100%);
+}
+
+/*////////////////////////////////////////*/
+/*/////////////Primer página/////////////////*/
+/*////////////////////////////////////////*/
+.fondo {
+  background-color: #fff; }
+
+.ind {
+  display: inline-block;
+  background: #354a67;
+  color: #ddad49;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px; }
+
+.circulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #354a67;
+  clip-path: circle(50% at right 100%); }
+
+section {
+  padding:0px;
+  position: relative;
+  height: 100%; 
+  overflow: hidden;}
+
+.border {
+  border: 1px solid black; }
+/*contenido pagina magma*/
+.contenido {
+  position: relative;
+  width: 100%; }
+  .contenido .cajatexto {
+    position: relative;
+    padding-top: 20px;
+    color: #333; }
+    .contenido .cajatexto h1 {
+      margin-bottom: 5px;
+      font-size: 2em; }
+    .contenido .cajatexto em {
+      color: #ddad49; }
+    .contenido .cajatexto p {
+      margin-bottom: 5px; }
+  .contenido .cajaimg {
+    position: relative; }
+    .contenido .cajaimg img {
+      height: 500px; }
+
+@media only screen and (min-width: 992px) {
+  .cajatexto {
+    margin-top: 80px; } }
+/*contenido pagina magma*/
+/*imagen pagina Magma*/
+@media only screen and (max-width: 992px){
+  .cajaimg{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -55px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 630px){
+  .cajaimg img{
+    width: 450px;
+    height: 411px;
+  }
+}
+@media only screen and (max-width: 650px){
+  .cajaimg{
+    margin-left: 100px;
+  }
+}
+/*imagen pagina de Magma*/
+/* 3 cocteles página Magma*/
+.coct {
+  width: 100%;
+  position: relative;
+  margin-top: -80px;
+  height: 110px; }
+
+.coct ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  justify-content: center; }
+
+.coct li {
+  transition: 0.4s;
+  margin: 0px 10px 0px 10px; }
+
+.coct li:hover {
+  transform: translateY(-40px);
+  cursor: pointer; }
+
+.coct img {
+  width: 110px; }
+  /* 3 cocteles página Magma*/
+
+/*////// ///////Primer página///// /////////*/
+/*//////////////////// ////////////////////*/
+/*////////////////////////////////////////*/
+/*////////////Segunda página/////////////*/
+  /*/////////////////Defecto////////////*/
+.text__hamburguer-dorado{
+  color: #ddad49;
+  display: inline;
+  margin-left: 3px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Sans-serif;
+}
+
+.colapsa{
+  margin-right: -30px;
+}
+
+.fondo2 {
+  background-color: #fff;
+  min-height: 100vh; }
+
+.menuEquipo li a {
+  color: #ddad49;
+  font-weight: 500; }
+  .menuEquipo li a a:hover {
+    display: inline-block;
+    background: #ddad49;
+    color: #354a67 !important;
+    border-radius: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 5px; }
+
+.circulo2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #354a67;
+  clip-path: circle(50% at 100% 0%); }
+
+.circulo3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddad49;
+  clip-path: circle(50% at 0% 110%); }
+
+.ind2 {
+  display: inline-block;
+  background: #ddad49;
+  color: #354a67 !important;
+  border-radius: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 5px; }
+
+#titulo {
+  grid-area: titulo;
+  position: relative;
+  color: #ddad49;
+  text-align: center;
+  font-size: 28px;
+  display: inline-block;}
+.contenedor__titulo{
+    text-align: center;
+    margin: 15px 0px 20px 0px;
+}
+
+.redes__img{
+  height: 30px;
+}
+
+.redes__ps{
+  display: flex;
+  margin-left: 42%;
+  margin-right: 42%;
+}
+
+.redes__ps li{
+  list-style: none;
+  margin-right: 8px;
+ /* filter: invert(100%);*/
+}
+
+/*/////////////////////Defecto/////////////*/
+/*////////////////////////////////////////*/
+/*////////////Segunda página/////////////*/
+/*///////Pantalla Mayor a 560px/////////*/
+/*/////////////////////////////////////*/
+@media only screen and (min-width: 560px){
+ .merlina {
+  grid-area: merlina;
+  align-self: flex-end;
+  flex-direction: row;
+  position: relative;
+  background-color: #ddad49;
+  border-radius: 50px;
+  display: flex;
+  margin-top: 20px;
+  height: 200px;
+  transition: 0.5s; } 
+  .merlina div {
+  margin-top: 40px;
+  margin-left: 10px;
+  }
+  .merlina__descripcion {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: center; }
+
+  .merlina__titulo {
+  text-align: center;
+  color: #354a67;
+  font-size: 20px; }
+
+  .merlina__img {
+  height: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px; }
+  .paula {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+  position: relative;
+  background-color: #354a67;
+  border-radius: 50px;
+  margin: 35px 0px auto 0px;
+  height: 200px;
+  transition: 0.5s; }
+
+.paula div {
+  margin-top: 40px; }
+
+.paula__descripcion {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: center; }
+
+.paula__titulo {
+  text-align: center;
+  color: #ddad49;
+  font-size: 20px; }
+
+.paula__img {
+  height: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px; }
+
+.redes__ps{
+  margin-top: -20px;
+}
+}
+/*///////////////////////////////////////*/
+/*///////Pantalla Mayor a 560px/////////*/
+/*/////////////////////////////////////*/
+/*///////Pantalla Menor a 560px///////*/
+/*///////////////////////////////////*/
+@media only screen and (max-width: 560px){
+  .merlina__descripcion, .paula__descripcion{
+    display: none;
+  }
+  .merlina, .paula{
+    width: auto;
+    border-radius: 50px;
+    position: relative;
+  }
+  .merlina__img, .paula__img{
+    width: 320px;
+    border-radius: 50px;
+  }
+
+  .merlina__titulo, .paula__titulo{
+    text-align: center;
+    font-size: 24px;
+    color: #354a67;
+  }
+  .redes__ps li img{
+    height: 20px;
+  }
+  .merlina__img, .paula__img{
+    width: 100%;
+  }
+}
+
+/*/////////////////////////////////////*/
+/*///////Pantalla Menor a 560px///////*/
+/*///////////////////////////////////*/
+@media only screen and (min-width: 800px){
+  .merlina{
+      margin: 25px 0px auto 180px;
+      width: 80%; 
+  }
+  .paula{
+      width: 80%; 
+  }
+}
+@media only screen and (max-width: 992px){
+  .merlina div{
+    margin-top: 10px;
+  }
+  .paula div{
+    margin-top: 10px;
+  }
+}
+
+@media only screen (min-width: 800px) and (max-width: 992px){
+  .redes__ps{
+    margin-top: -40px;
+  }
+}
+
+.merlina .redes__ps img{
+  filter: invert(0%);
+}
+
+/*/////////////Segunda página//////////////*/
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+/*/////////////Tercera página//////////////*/
+.fondo3 {
+  background-color: #fff; }
+
+.circulo4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddad49;
+  clip-path: circle(45% at 0% 0%); }
+
+#tituloCocteles {
+  position: relative;
+  text-align: center;
+  color: #354a67; 
+  margin: 5px 0px 5px 0px;
+  font-size: 36px;}
+
+
+.cocteles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+  margin-bottom: 40px;}
+
+.cocteles div {
+  margin: 30px 10px 0px 10px;
+  text-align: center;
+  color: #ddad49;
+  background-color: #354a67;
+  border-radius: 25px;
+  position: relative;
+  transition: 0.5s; }
+
+.cocteles div:hover {
+  transform: scale(1.1, 1.1); }
+
+@media only screen and (max-width: 991px) and (min-width: 480px){
+  .cocteles div{
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .cocteles div{
+    width: 70%;
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+  .cocteles div{
+    width: 25%;
+    margin: 30px 30px 0px 30px;
+  }
+}
+
+.cocteles div h3 {
+  background-color: #354a67;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-bottom: 5px;
+  font-size: 19px;}
+
+.cocteles div img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%; }
+
+/*/////////////Tercera página//////////////*/
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+/*/////////////Cuarta página//////////////*/
+.fondo4 {
+  background-image: linear-gradient(#fff, #ddad49);
+  min-height: 100vh; }
+
+.marcas img{
+  width: 13%;
+}
+.marcas h1{
+  color:#354a67;
+  text-align: center;
+}
+
+@media only screen and (max-width: 520px){
+  .marcas h1{
+    font-size: 21px;
+  }
+  .h1servicios{
+    margin-top: 40px;
+  }
+  .contactarnos{
+    margin-top: 30px;
+  }
+  .marcas{
+    padding: 12px 8px 12px 0px;
+  }
+}
+
+.marcas{
+  background-image: linear-gradient(#72A5C8, #ddad49);
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 580px){
+br{
+  display: none;
+}
+}
+
+.h1servicios {
+  color: #354a67;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px; }
+
+.contenido5 {
+  position: relative;
+  grid-area: contenido5; }
+
+.contenido5 p {
+  text-align: center; }
+
+#myBtn {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2em;
+  grid-area: contact; }
+
+.modal__lista{
+  margin-left: 20px;
+}
+
+.modal__lista li a{
+  color: #354a67;
+}
+
+.contactarnos{
+  display: block;
+  margin-left: 40%;
+}
+
+@media only screen and (min-width: 992px){
+    .contactarnos{
+      margin-left: 45%;}
+}
+
+@media only screen and (max-width: 520px){
+  .contactarnos{
+    margin-left: 35%;
+  }
+}
+
+/*/////////////Cuarta página//////////////*/
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+/*/////////////Quinta página//////////////*/
+
+.header__contacto{
+  margin-top: 0px;
+}
+
+.text-uppercase{
+  color: #354a67;
+  margin-bottom: 80px;
+  margin-top: 10px;
+}
+
+#contact{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.fondo__contacto{
+  background-color: #fff;
+  background-image: url(../imagenes/fondo__contacto.png);
+}
+
+h6{
+  color: #354a67;
+  margin-bottom: 20px;
+}
+
+/*////////////////////////////////////////*/
+/*/////////////Quinta página//////////////*/
+/*////////////////////////////////////////*/
+@media only screen and (max-width: 991px){
+  .ind, .ind2{
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+$color-azul: #354a67;
+$color-dorado: #ddad49;
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	grid-area: header;
+	.logo{
+		max-width: 90px;
+	}
+	ul{
+		display: flex;
+		li{
+			list-style: none;
+			a{
+				display: inline-block;
+				color: #354a67;
+				font-weight: 500;
+				margin-left: 40px;
+				text-decoration: none;
+				padding: 5px;
+				transition: 0.7s;
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-width: 992px){
+	header ul li a:hover{
+		display: inline-block;
+		background: $color-azul;
+		color: #ddad49 !important;
+		border-radius: 30px;
+		font-weight: 500;
+		text-decoration: none;
+		padding: 5px;
+		transform: translateY(-10px);
+	}
+}
+
+
+.redes{
+	position: fixed;
+	top: 50%;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	li{
+		list-style: none;
+		padding: 7px;
+		img{
+			height: 30px;
+		}
+	}
+}
+
+.footer{
+	background-color: #000;
+	text-align: center;
+	border-top: 1px solid #CCC;
+	.footer__texto{
+		margin-bottom: 0;
+		color: #fff;
+	}
+}
+
+/*////////////////////////////////////////*/
+/*/////////////Primer página/////////////////*/
+/*////////////////////////////////////////*/
+.fondo{
+	background-color: #fff;
+}
+
+.ind{
+	display: inline-block;
+	background: #354a67;
+	color: #ddad49 !important;
+	border-radius: 30px;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.circulo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $color-azul;
+	clip-path: circle(50% at right 100%);
+}
+
+section{
+	position: relative;
+	height: 100%;
+}
+
+.border {
+   border: 1px solid black;
+}
+
+
+.contenido{
+	position: relative;
+	width: 100%;
+	.cajatexto{
+		position: relative;
+		padding-top: 40px;
+		color: #333;
+		h1{
+			margin-bottom: 5px;
+			font-size: 2em;
+		}
+		em{
+			color: $color-azul;
+		}
+		p{
+			margin-bottom: 5px;
+		}
+	}
+	.cajaimg{
+		position: relative;
+		img{
+			height: 500px;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px){
+	.cajatexto{
+		margin-top: 80px;
+	}
+}
+
+@media only screen and(max-width: 992px){
+	.cajaimg img{
+		height: 320px;
+	}
+}
+
+.coct{
+	width: 100%;
+	position: relative;
+	margin-top: -80px;
+	height: 110px;
+}
+
+.coct ul{
+	display: flex;
+	list-style: none;
+	position: relative;
+	justify-content: center;
+}
+
+.coct li{
+	transition: 0.4s;
+	margin: 0px 10px 0px 10px;
+}
+
+
+.coct li:hover{
+	transform: translateY(-40px);
+	cursor: pointer;
+}
+
+.coct img{
+	width: 110px;
+}
+/*////// ///////Primer página///// /////////*/
+/*//////////////////// ////////////////////*/
+/*////////////////////////////////////////*/
+/*////////////Segunda página/////////////*/
+#grillaEquipo{
+	display: grid;
+	grid-template-rows: 110px 10px auto auto;
+	grid-auto-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"header header header"
+	"titulo titulo titulo"
+	". merlina merlina"
+	"paula paula .";
+	height: 100vh;
+}
+
+.fondo2{
+	background-color: #fff;
+	min-height: 100vh;
+}
+
+.menuEquipo a {
+	color: $color-dorado;
+	font-weight: 500;
+	a:hover{
+		display: inline-block;
+		background: $color-dorado;
+		color: #354a67 !important;
+		border-radius: 30px;
+		font-weight: 400;
+		text-decoration: none;
+		padding: 5px;
+	}
+}
+
+.circulo2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $color-azul;
+	clip-path: circle(50% at 100% 0%);
+}
+
+.circulo3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $color-dorado;
+	clip-path: circle(50% at 0% 110%);
+}
+
+.ind2{
+	display: inline-block;
+	background: #ddad49;
+	color: #354a67 !important;
+	border-radius: 30px;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.merlina{
+	grid-area: merlina;
+	align-self: flex-end;
+	flex-direction: row;
+	position: relative;
+	background-color: #ddad49;
+	border-radius: 50px;
+	display: flex;
+	margin: 50px 60px auto 0px;
+	height: 200px; 
+	transition: 0.5s; 
+}
+
+.merlina:hover{
+	transform: skewX(5deg);
+}
+
+
+.merlina div{
+	margin-top: 40px;
+	margin-left: 10px;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.merlina__descripcion{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.merlina__titulo{
+	text-align: center;
+	color: $color-azul;
+	font-size: 20px;
+}
+
+
+.merlina__img{
+	height: 100%;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.paula{
+	grid-area: paula;
+	display: flex;
+	align-self: flex-start;
+	flex-direction: row;
+	position: relative;
+	background-color: $color-azul;
+	border-radius: 50px;
+	margin: 35px 0px auto 60px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.paula:hover{
+	transform: skewX(5deg);
+}
+
+.paula div{
+		margin-top: 40px;
+	}
+
+.paula__descripcion{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.paula__titulo{
+	text-align: center;
+	color: #ddad49;
+	font-size: 20px;
+}
+
+
+.paula__img{
+	height: 100%;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+#titulo{
+	grid-area: titulo;
+	position: relative;
+	color: #ddad49;
+	text-align: center;
+	font-size: 28px;
+}
+/*/////////////Segunda página//////////////*/
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+/*/////////////Tercera página//////////////*/
+.fondo3{
+	background-color: #fff;
+}
+
+#grillaCocteles{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 110px 40px auto auto auto auto;
+	grid-template-areas: 
+		"header header header"
+		"tt-coc tt-coc tt-coc"
+		"cocteles cocteles cocteles"
+		"cocteles cocteles cocteles"
+		"cocteles cocteles cocteles"
+		"cocteles cocteles cocteles";
+		height: 100%;
+}
+
+@media screen and(min-width: 1300px){
+	#grillaCocteles{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 110px 40px 350px 350px;
+		grid-template-areas: 
+			"header header header"
+			"tt-coc tt-coc tt-coc"
+			"cocteles cocteles cocteles"
+			"cocteles cocteles cocteles";
+			height: 100%;
+	}
+}
+
+.circulo4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $color-dorado;
+	clip-path: circle(45% at 0% 0%);
+}
+
+#tituloCocteles{
+	position: relative;
+	grid-area: tt-coc;
+	text-align: center;
+	color: $color-azul;
+}
+
+#Cocteles{
+	grid-area: cocteles;
+}
+
+.cocteles{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.cocteles div{
+	margin: 30px 30px 0px 30px; 
+	text-align: center;
+	color: $color-dorado;
+	background-color: $color-azul;
+	width: 250px;
+	height: 280px;
+	border-radius: 25px;
+	position: relative;
+	transition: 0.5s;
+}
+
+
+.cocteles div:hover{
+	transform: scale(1.1, 1.1);
+}
+
+.cocteles div h3{
+	background-color: $color-azul;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	margin-bottom: 30px;
+	font-size: 19px;
+	padding-top: 4px;
+}
+
+
+.cocteles div img{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	width: 100%;
+}
+/*/////////////Tercera página//////////////*/
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+/*/////////////Cuarta página//////////////*/
+.fondo4{
+	background-image: linear-gradient(#fff, #ddad49);
+	min-height: 100vh;
+}
+
+#grillaNosotros{
+	display: grid;
+	grid-template-rows: 110px 230px 40px auto;
+	grid-template-columns: repeat(6, 1fr); 
+	grid-template-areas: 
+	"header header header header header header"
+	". contenido5 contenido5 contenido5 contenido5 ."
+	". . contact contact . ."
+	"marcas marcas marcas marcas marcas marcas";
+	height: 100vh;
+}
+
+
+.marcas{
+	grid-area: marcas;
+	background-image: linear-gradient(#ABC6BF, $color-dorado);
+	margin: 35px 0px 50px 0px;
+	padding: -10px 0px -50px 0px;
+	h1{
+		text-align: center;
+		color: $color-azul;
+	}
+	div{
+		display: flex;
+	}
+}
+
+@each $marca in marca1, marca2, marca3, marca4, marca5, marca6, marca7, marca8{
+	.#{$marca}{
+		background-image: url('../imagenes/#{$marca}.png');
+		width: 163px;
+		height: 163px;
+		background-size: 163px;
+	}
+}
+
+
+
+.h1servicios{
+	color: $color-azul;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 32px;
+}
+
+.contenido5{
+	position: relative;
+	grid-area: contenido5;
+}
+
+.contenido5 p{
+	text-align: center;
+}
+
+#myBtn{
+	position: relative;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.2em;
+	grid-area: contact;
+}
+
+
+
+/*/////////////Cuarta página//////////////*/
+/*////////////////////////////////////////*/
+/*////////////////////////////////////////*/
+/*/////////////Quinta página//////////////*/
+#grillaContacto{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 110px 1fr 3fr 1fr;
+	grid-template-areas: 
+	"header header header header header header"
+	". . . . . ."
+	". form form form form ."
+	". . . . . .";
+	height: 100vh;
+}
+
+#form{
+	grid-area:form;
+}
+
+form label{
+	color: $color-azul;
+}
+
+
+.fondoContacto{
+	background-image: linear-gradient( $color-dorado, $color-azul);
+	min-height: 100vh;
+}
+
+fieldset{
+	background-color: $color-azul;
+	align-items: center;
+}
+
+.h1contacto{
+	color: $color-dorado;
+	text-align: center;
+	margin-top: 10px;
+	font-size: 32px;
+}
+
+fieldset form{
+	text-align: center;
+	margin-top: 20px;
+	cursor: pointer;
+}
+/*////////////////////////////////////////*/
+/*/////////////Quinta página//////////////*/
+/*////////////////////////////////////////*/
