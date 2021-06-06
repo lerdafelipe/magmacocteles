@@ -1,0 +1,8 @@
+[{"id": 1, "nombre": "Expresso Cream", "precio": 267, "ingredientes": "Vodka, Licor de café cremoso, Café", "cantidad": 1, "imagen": "imagenes/Expresso_Cream.jpg"},
+{"id": 2, "nombre": "Golden Hanky Panky", "precio": 290, "ingredientes": "Gin, Fernet, Vermouth rosso, Syrup de pomelo amarillo", "cantidad": 1, "imagen": "imagenes/Golden_Hanky_Panky.jpg"}, 
+{"id": 3, "nombre": "Hanky Panky", "precio": 207, "ingredientes": "Gin, Fernet, Vermouth rosso", "cantidad": 1, "imagen": "imagenes/Hanky_Panky.jpg"}, 
+{ "id": 4, "nombre": "Magma", "precio": 353, "ingredientes": "Ron dorado, Bitter rojo, Vermouth rosso, Syrup de ciruela, Exprimido de pomelo rojo, Canela", "cantidad": 1, "imagen": "imagenes/Magma.jpg"}, 
+{"id": 5, "nombre": "Mint Collins", "precio": 285, "ingredientes": "Gin, Exprimido de limon, Almibar de menta", "cantidad": 1, "imagen": "imagenes/Mint_Collins.jpg"}, 
+{"id": 6, "nombre": "Negroni", "precio": 255, "ingredientes": "Gin, Bitter rojo, Vermouth rosso", "cantidad": 1, "imagen": "imagenes/Negroni.jpg"}, 
+{"id": 7, "nombre": "Penicillin", "precio": 305, "ingredientes": "Whisky, Exprimido de limon, Jarabe de miel y jengibre", "cantidad": 1, "imagen": "imagenes/Penicillin.jpg"}, 
+{"id": 8, "nombre": "Penicillin", "precio": 185, "ingredientes": "Bitter rojo, Exprimido de Naranja, Vermouth rosso, Almibar regular", "cantidad": 1, "imagen": "imagenes/Presto.jpg"}]

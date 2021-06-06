@@ -39,7 +39,7 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Su mensaje a sido enviado. </strong>"
+                        "<strong>Su mensaje ha sido enviado. </strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields

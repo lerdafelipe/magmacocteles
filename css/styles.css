@@ -2649,7 +2649,6 @@ fieldset:disabled a.btn {
 .btn-dark {
   color: #fff;
   background-color: #354a67;
-  border-color: #ddad49;
 }
 .btn-dark:hover {
   color: #fff;
@@ -3983,6 +3982,7 @@ input[type=button].btn-block {
 .navbar-nav {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -10042,7 +10042,7 @@ img::-moz-selection {
   align-items: center;
   justify-content: center;
   padding: 0;
-  border-radius: 100%;
+  border-radius: 8px;
 }
 
 #mainNav {
